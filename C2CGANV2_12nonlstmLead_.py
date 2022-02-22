@@ -184,7 +184,7 @@ def define_generator():
     model.add(layers.Input(shape=(50, 12)))
 
     
-    model.add(layers.Bidirectional(layers.LSTM(64, return_sequences=True)))
+    #model.add(layers.Bidirectional(layers.LSTM(64, return_sequences=True)))
     model.add(layers.Conv1D(filters=128, kernel_size=16, strides=1, padding='same'))
     model.add(layers.LeakyReLU())
   
